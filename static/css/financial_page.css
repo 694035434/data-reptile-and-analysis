@@ -1,0 +1,83 @@
+body{
+    background-color: #21A957;
+}
+.main_module{
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-top:50px;
+    color: whitesmoke;
+    /*border: solid 1px black;*/
+}
+#name_field,#email_field{
+    width: 250px;
+    height: 25px;
+    margin-top: 30px;
+}
+.main_module select{
+    width: 210px;
+    height: 25px;
+    margin-right: 60px;
+    margin-top: 30px;
+}
+.title{
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    margin: 0 auto;
+    color: whitesmoke;
+    position: relative;
+    right: 100px;
+    margin-bottom: 50px;
+    /*background-color: black;*/
+}
+.title_line{
+    width: 400px;
+    height: 1px;
+    background-color: #F5D74D;
+    margin: 0 auto;
+    position: relative;
+    right: 120px;
+    margin-bottom: 50px;
+}
+.button{
+    background-color: #F5D74D;
+    border: 1px solid #F5D74D;
+    color: whitesmoke;
+    width: 340px;
+    height: 50px;
+    font-size: 30px;
+}
+.result{
+    width: 1200px;
+    height: 600px;
+    border: solid black 1px;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    font-size: 18px;
+}
+.result ul{
+    list-style: none;
+}
+.result li{
+    float: left;
+    /*margin-right: 50px;*/
+}
+.result_title{
+    font-size: 25px;
+}
+.product_name{
+    width: 450px;
+    height: 25px;
+    overflow:hidden;
+}
+.result_title li{
+    height: 30px;
+}
+.lb,.zt,.mk,.gm{
+    width: 150px;
+    height: 35px;
+}

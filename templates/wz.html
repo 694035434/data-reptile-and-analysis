@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/wz.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_module">
+    <div class="title">王者荣耀图片</div>
+    <div class="title_line"></div>
+    <form method="get" action="/wz_Crawl" />
+    <div class="input">英雄名称:
+   <input type="text" id="hero_name" name="hero_name" />
+   <input type="submit" class="button" value="爬取" /></div>
+
+</form>
+    <div class="result">
+     {% for r1 in u_result  %}
+        <div class="hero">
+            <img src="{{r1}}" class="hero_img">
+            </div>
+    {%endfor%}
+
+    </div>
+</div>
+</body>
+</html>

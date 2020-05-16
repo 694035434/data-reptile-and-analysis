@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/li_video.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_module">
+    <div class="title">梨视频爬取</div>
+    <div class="title_line"></div>
+        <div class="menu">
+    <form method="get" action="/li_Crawl" />
+            视频类别：
+    <select name="pro_type">
+      <option value="1">社会</option>
+      <option value="2">世界</option>
+      <option value="3">财富</option>
+      <option value="4">娱乐</option>
+        <option value="5">生活</option>
+   </select>
+     <input type="submit" class="button" value="爬取" />
+</form>
+        </div>
+     {% for r1 in u_result  %}
+        <div class="video_kk">
+        <video class="video" src="{{r1[1]}}" controls></video>
+        <div class="video_title">{{r1[0]}}</div>
+        </div>
+    {%endfor%}
+    </div>
+
+</body>
+</html>

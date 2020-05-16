@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/financial_page.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_module">
+    <div class="title">金融数据分析</div>
+    <div class="title_line"></div>
+    <form method="get" action="/data_Crawl" />
+
+   总页数:
+   <input type="text" id="name_field" name="page_num" /><br />
+
+   每页数:
+   <input type="text" id="email_field" name="page_size" /><br />
+                      产品类型：
+    <!--下拉列表-->
+    <select name="pro_type">
+      <option value="1">信托产品</option>
+      <option value="2">资管产品</option>
+      <option value="3">私募产品</option>
+      <option value="4">其他产品</option>
+   </select><br />
+    产品状态：
+   <select name="pro_status">
+      <option value="在售">在售</option>
+      <option value="募集失败">募集失败</option>
+      <option value="售罄">售罄</option>
+      <option value="开放期">开放期</option>
+   </select>
+   <br/><br/>
+   <input type="submit" class="button" value="爬取" />
+</form>
+    <div class="result">
+        <ul class="result_title">
+            <li class="product_name">产品名称</li>
+            <li class="lb">产品类型</li>
+            <li class="zt">产品状态</li>
+            <li class="mk">投资门槛</li>
+            <li class="gm">发行规模</li>
+        </ul>
+        <br/>
+     {% for r1 in u_result  %}
+        <ul>
+            <li class="product_name">{{r1[0]}}</li>
+            <li class="lb">{{r1[1]}}</li>
+            <li class="zt">{{r1[2]}}</li>
+            <li class="mk">{{r1[3]}}</li>
+            <li class="gm">{{r1[4]}}</li>
+        </ul>
+    {%endfor%}
+    </div>
+</div>
+</body>
+</html>

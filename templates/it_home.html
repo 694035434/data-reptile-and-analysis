@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/it_home.css" rel="stylesheet">
+</head>
+<body>
+{% for r1 in u_result  %}
+        <ul>
+            <li class="product_name">{{r1[0]}}</li>
+            <li class="lb">{{r1[1]}}</li>
+            <li class="zt">{{r1[2]}}</li>
+            <li class="mk">{{r1[3]}}</li>
+            <li class="gm">{{r1[4]}}</li>
+        </ul>
+    {%endfor%}
+</body>
+</html>

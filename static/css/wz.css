@@ -1,0 +1,83 @@
+body{
+    background-color: #21A957;
+}
+.main_module{
+    width: 1500px;
+    height: 1100px;
+    margin: 0 auto;
+    font-size: 25px;
+    padding-left: 100px;
+    padding-top:50px;
+    color: whitesmoke;
+    /*border: solid 1px black;*/
+}
+.title{
+    width: 300px;
+    height: 50px;
+    font-size: 40px;
+    margin: 0 auto;
+    color: whitesmoke;
+    position: relative;
+    right: 100px;
+    margin-bottom: 50px;
+    /*background-color: black;*/
+}
+.title_line{
+    width: 400px;
+    height: 1px;
+    background-color: #F5D74D;
+    margin: 0 auto;
+    position: relative;
+    right: 120px;
+    margin-bottom: 10px;
+}
+.button{
+    background-color: #F5D74D;
+    border: 1px solid #F5D74D;
+    color: whitesmoke;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    position: relative;
+    left: 30px;
+    top:4px;
+}
+.result{
+    width: 1500px;
+    height: 700px;
+    border: solid black 1px;
+    position: absolute;
+    top: 280px;
+    left: 200px;
+    font-size: 18px;
+}
+.hero{
+    width: 300px;
+    height: 150px;
+    /*border: 1px solid black;*/
+    margin-left: 50px;
+    margin-top: 30px;
+    float: left;
+    overflow: hidden;
+}
+.hero_img{
+    width: 400px;
+    height: 184px;
+    /*float: left;*/
+}
+.hero_title{
+
+    font-size: 15px;
+    margin-left: 8px;
+}
+#hero_name{
+     width: 250px;
+    height: 25px;
+    /*margin-left: 300px;*/
+    margin-top: 35px;
+    position: relative;
+    top: -3px;
+}
+.input{
+    margin-left: 350px;
+}

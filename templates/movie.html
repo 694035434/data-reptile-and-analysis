@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../static/css/movie.css" rel="stylesheet">
+</head>
+<body>
+<div class="main_module">
+    <div class="title">豆瓣电影爬虫</div>
+    <div class="title_line"></div>
+    <form method="get" action="/movie_Crawl" />
+                      类型：
+    <select name="movie_type">
+      <option value="movie">电影</option>
+      <option value="tv">电视剧</option>
+   </select>
+    电影归类：
+   <select name="Classification">
+      <option value="热门">热门</option>
+      <option value="最新">最新</option>
+      <option value="豆瓣高分">豆瓣高分</option>
+      <option value="冷门佳片">冷门佳片</option>
+       <option value="华语">华语</option>
+       <option value="欧美">欧美</option>
+       <option value="韩国">韩国</option>
+       <option value="日本">日本</option>
+   </select>
+    电影个数:
+   <input type="text" id="name_field" name="page_num" />
+   <input type="submit" class="button" value="爬取" />
+</form>
+    <div class="result">
+     {% for r1 in u_result  %}
+        <div class="movie">
+            <img src="{{r1[2]}}" class="movie_img">
+            <div class="movie_title">{{r1[0]}}<span> {{r1[1]}}</span></div>
+            </div>
+    {%endfor%}
+
+    </div>
+</div>
+</body>
+</html>
